@@ -12,6 +12,10 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@types/dompurify": "^3.0.1",
+    "@types/marked": "^4.0.8",
+    "dompurify": "^3.0.1",
+    "marked": "^4.3.0",
     "vue": "^3.2.47"
   },
   "devDependencies": {
