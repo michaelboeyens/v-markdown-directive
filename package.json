@@ -5,7 +5,13 @@
   "files": [
     "dist"
   ],
+  "license": "MIT",
+  "author": "Michaël Boeyens",
   "main": "./dist/v-markdown-directive.umd.cjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelboeyens/v-markdown"
+  },
   "module": "./dist/v-markdown-directive.js",
   "exports": {
     ".": {
