@@ -8,8 +8,8 @@ const install = (
 ) => {
   app.directive('markdown', (el, binding) => {
     const rendered_html = DOMPurify.sanitize(
-      marked(binding.value, config.markedOptions),
-      config.domPurifyOptions
+      marked(binding.value, config.markedOptions ?? {}),
+      config.domPurifyOptions ?? {}
     )
     rendered_html && (el.innerHTML = rendered_html)
   })
