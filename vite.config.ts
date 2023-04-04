@@ -6,10 +6,10 @@ export default defineConfig({
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
-      entry: resolve(__dirname, 'src/v-markdown.ts'),
-      name: 'v-markdown',
+      entry: resolve(__dirname, 'src/v-markdown-directive.ts'),
+      name: 'v-markdown-directive',
       // the proper extensions will be added
-      fileName: 'v-markdown'
+      fileName: 'v-markdown-directive'
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

@@ -1,17 +1,16 @@
 {
-  "name": "v-markdown",
+  "name": "v-markdown-directive",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/v-markdown.umd.cjs",
-  "module": "./dist/v-markdown.js",
+  "main": "./dist/v-markdown-directive.umd.cjs",
+  "module": "./dist/v-markdown-directive.js",
   "exports": {
     ".": {
-      "import": "./dist/v-markdown.js",
-      "require": "./dist/v-markdown.umd.cjs"
+      "import": "./dist/v-markdown-directive.js",
+      "require": "./dist/v-markdown-directive.umd.cjs"
     }
   },
   "types": "./dist/types.d.ts",

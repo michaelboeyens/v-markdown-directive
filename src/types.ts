@@ -1,5 +1,5 @@
-import type VMarkdown from './v-markdown'
-export * from './v-markdown'
+import type VMarkdown from './v-markdown-directive'
+export * from './v-markdown-directive'
 
 declare module 'vue' {
   interface GlobalDirectives {
