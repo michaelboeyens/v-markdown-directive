@@ -5,15 +5,15 @@ import type { App } from 'vue'
 const install = (
   app: App,
   config: { markedOptions: marked.MarkedOptions; domPurifyOptions: DOMPurify.Config } = {
-    markedOptions: {},
+    markedOptions: { mangle: false, headerIds: false },
     domPurifyOptions: {}
   }
 ) => {
   app.directive('markdown', (el, binding) => {
-    const rendered_html = DOMPurify.sanitize(
-      marked(binding.value, config.markedOptions),
-      config.domPurifyOptions
-    )
+    const marked = marked(binding.value, config.markedOptions)
+    console.log(marked)
+    const rendered_html = DOMPurify.sanitize(marked)
+    console.log(rendered_html)
     rendered_html && (el.innerHTML = rendered_html)
   })
 }
