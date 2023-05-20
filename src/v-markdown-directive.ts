@@ -1,6 +1,6 @@
 import { marked } from 'marked'
 import type { App } from 'vue'
-import * as DOMPurify from 'dompurify'
+import * as DOMPurify from 'isomorphic-dompurify'
 
 const install = (
   app: App,
@@ -11,8 +11,7 @@ const install = (
 ) => {
   app.directive('markdown', (el, binding) => {
     marked.use(config.markedOptions)
-    const convertedMD = marked.parse(binding.value)
-    const rendered_html = DOMPurify.sanitize(convertedMD)
+    const rendered_html = DOMPurify.sanitize(marked.parse(binding.value))
     console.log(rendered_html)
     rendered_html && (el.innerHTML = rendered_html)
   })
