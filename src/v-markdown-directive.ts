@@ -10,7 +10,7 @@ const install = (
   }
 ) => {
   app.directive('markdown', {
-    beforeMount(el, binding) {
+    mounted(el, binding) {
       marked.use(config.markedOptions)
       const rendered_html = DOMPurify.sanitize(marked.parse(binding.value))
       console.log(rendered_html)
