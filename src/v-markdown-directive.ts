@@ -11,9 +11,9 @@ const install = (
 ) => {
   app.directive('markdown', (el, binding) => {
     marked.use(config.markedOptions)
-    const marked = marked.parse(binding.value)
+    const convertedMD = marked.parse(binding.value)
     console.log(marked)
-    const rendered_html = DOMPurify.sanitize(marked)
+    const rendered_html = DOMPurify.sanitize(convertedMD)
     console.log(rendered_html)
     rendered_html && (el.innerHTML = rendered_html)
   })
