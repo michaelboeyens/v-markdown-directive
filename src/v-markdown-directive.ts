@@ -9,11 +9,13 @@ const install = (
     domPurifyOptions: {}
   }
 ) => {
-  app.directive('markdown', (el, binding) => {
-    marked.use(config.markedOptions)
-    const rendered_html = DOMPurify.sanitize(marked.parse(binding.value))
-    console.log(rendered_html)
-    rendered_html && (el.innerHTML = rendered_html)
+  app.directive('markdown', {
+    onBeforeMount: (el, binding) => {
+      marked.use(config.markedOptions)
+      const rendered_html = DOMPurify.sanitize(marked.parse(binding.value))
+      console.log(rendered_html)
+      rendered_html && (el.innerHTML = rendered_html)
+    }
   })
 }
 
