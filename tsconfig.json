@@ -1,5 +1,5 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "files": [],
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "v-markdown-directive.ts"],
   "compilerOptions": {
     "baseUrl": ".",
@@ -7,10 +7,12 @@
       "@/*": ["./src/*"]
     }
   },
-
   "references": [
     {
       "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
     }
   ]
 }

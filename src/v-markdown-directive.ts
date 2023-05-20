@@ -1,5 +1,5 @@
 import { marked } from 'marked'
-import DOMPurify from 'dompurify'
+import * as DOMPurify from 'dompurify'
 import type { App } from 'vue'
 
 const install = (
