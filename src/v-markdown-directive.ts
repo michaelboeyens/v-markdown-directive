@@ -1,7 +1,6 @@
 import { marked } from 'marked'
 import type { App } from 'vue'
-
-import DOMPurify = require('dompurify')
+import DOMPurify from 'dompurify'
 
 const install = (
   app: App,
@@ -14,6 +13,7 @@ const install = (
     marked.use(config.markedOptions)
     const convertedMD = marked.parse(binding.value)
     const rendered_html = DOMPurify.sanitize(convertedMD)
+    console.log(rendered_html)
     rendered_html && (el.innerHTML = rendered_html)
   })
 }
