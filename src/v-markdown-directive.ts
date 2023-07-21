@@ -1,6 +1,6 @@
 import { marked } from 'marked'
 import type { App } from 'vue'
-import * as DOMPurify from 'isomorphic-dompurify'
+import DOMPurify from 'dompurify'
 
 const install = (
   app: App,
