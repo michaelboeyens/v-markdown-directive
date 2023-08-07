@@ -1,7 +1,8 @@
 # v-markdown-directive
 
-> Markdown parser for Vue.js
 [![Security audit](https://github.com/michaelboeyens/v-markdown-directive/actions/workflows/audit.yml/badge.svg)](https://github.com/michaelboeyens/v-markdown-directive/actions/workflows/audit.yml)
+<br />
+> Markdown parser for Vue.js
 
 ## Install
 
