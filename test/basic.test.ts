@@ -2,7 +2,14 @@ import { mount } from '@vue/test-utils';
 import { expect, test } from "vitest";
 import markdown from "../src/v-markdown-directive";
 
-const markdownComponent = {template: `<div v-markdown="markdown"></div>`, data() {return {markdown: `# Hello World`}}}
+const markdownComponent = {
+    template: `<div v-markdown="markdown"></div>`,
+    data() {
+        return {
+            markdown: `# Hello World`,
+        }
+    }
+}
 
 test("render markdown", ()=>{
     const wrapper = mount(markdownComponent, {
