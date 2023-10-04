@@ -1,6 +1,6 @@
 {
   "name": "v-markdown-directive",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "vue directive plugin to parse markdown into html ",
   "keywords": [
     "vue",
