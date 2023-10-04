@@ -1,0 +1,34 @@
+name: Run tests
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 */3 * *'
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16, 18, 20]
+        pnpm-version: [8]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use pnpm ${{ matrix.pnpm-version }}
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ matrix.pnpm-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+          cache-dependency-path: '.'
+      - name: Install dependencies
+        run: pnpm install
+      - name: Scan for vulnerabilities
+        run: pnpm test
