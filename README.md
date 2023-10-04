@@ -17,7 +17,7 @@ app.use(markdown)
 app.mount('#app')
 ```
 
-## usage
+## Usage
 
 ```
 <template>
