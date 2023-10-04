@@ -2,7 +2,7 @@
 
 [![Security audit](https://github.com/michaelboeyens/v-markdown-directive/actions/workflows/audit.yml/badge.svg)](https://github.com/michaelboeyens/v-markdown-directive/actions/workflows/audit.yml)
 <br />
-[![Tests status](https://github.com/michaelboeyens/v-markdown-directive/actions/workflows/test.yml/badge.svg)](https://github.com/michaelboeyens/v-markdown-directive/actions/workflows/test.yml)
+[![Plugin tests](https://github.com/michaelboeyens/v-markdown-directive/actions/workflows/test.yml/badge.svg)](https://github.com/michaelboeyens/v-markdown-directive/actions/workflows/test.yml)
 <br />
 
 > Markdown parser for Vue.js
