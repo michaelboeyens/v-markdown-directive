@@ -1,6 +1,6 @@
-import DOMPurify from 'dompurify'
-import { marked } from 'marked'
-import type { App } from 'vue'
+import DOMPurify from "dompurify";
+import { marked } from "marked";
+import type { App } from "vue";
 
 /**
  * Installs the `markdown` directive to the provided Vue.js `app` instance.
@@ -16,13 +16,16 @@ const install = (
     domPurifyOptions: {}
   }
 ) => {
-  app.directive('markdown', {
+  app.directive("markdown", {
     mounted(el, binding) {
-      marked.use(config.markedOptions)
-      const rendered_html = DOMPurify.sanitize(marked.parse(binding.value), config.domPurifyOptions)
-      rendered_html && (el.innerHTML = rendered_html)
+      marked.use(config.markedOptions);
+      const rendered_html = DOMPurify.sanitize(
+        marked.parse(binding.value),
+        config.domPurifyOptions
+      );
+      rendered_html && (el.innerHTML = rendered_html);
     }
-  })
-}
+  });
+};
 
-export default install
+export default install;
