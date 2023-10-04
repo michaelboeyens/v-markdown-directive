@@ -32,7 +32,7 @@
   "types": "./dist/v-markdown-directive.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check build-only generate:types",
+    "build": "run-p test-build type-check build-only generate:types",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
@@ -40,7 +40,8 @@
     "format": "prettier --write src/",
     "generate:types": "vue-tsc --declaration --emitDeclarationOnly --outdir ./dist",
     "test": "vitest",
-    "test-ui": "vitest --ui --coverage.enabled=true"
+    "test-ui": "vitest --ui --coverage.enabled=true",
+    "test-build": "vitest --run --coverage.enabled=true"
   },
   "dependencies": {
     "@types/dompurify": "^3.0.3",

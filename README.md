@@ -10,13 +10,13 @@
 ## Install
 
 ```js
-import markdown from 'v-markdown-directive'
+import markdown from "v-markdown-directive";
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(markdown)
+app.use(markdown);
 
-app.mount('#app')
+app.mount("#app");
 ```
 
 ## Usage
