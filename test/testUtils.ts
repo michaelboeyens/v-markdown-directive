@@ -20,5 +20,5 @@ export const basicTest = (template: string, markdown: string, expected: string) 
   })
   console.log('source markdown: \n', wrapper.vm.markdown)
   console.log('rendered markdown: \n', wrapper.html())
-  expect(wrapper.html()).toContain(expected)
+  expect(wrapper.html({ raw: true })).toContain(expected)
 }
