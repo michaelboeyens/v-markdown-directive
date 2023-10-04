@@ -1,6 +1,6 @@
+import DOMPurify from 'dompurify'
 import { marked } from 'marked'
 import type { App } from 'vue'
-import DOMPurify from 'dompurify'
 
 /**
  * Installs the `markdown` directive to the provided Vue.js `app` instance.
