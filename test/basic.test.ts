@@ -1,21 +1,8 @@
-import { mount } from '@vue/test-utils'
-import { expect, test } from 'vitest'
-import markdown from '../src/v-markdown-directive'
+import { test } from 'vitest'
+import { basicTest } from './testUtils'
 
-const markdownComponent = {
-  template: `<div v-markdown="markdown"></div>`,
-  data() {
-    return {
-      markdown: `# Hello World`
-    }
-  }
-}
+const template = `<div v-markdown="markdown"></div>`
+const markdown = `# Hello World`
+const expected = `<h1>Hello World</h1>`
 
-test('render markdown', () => {
-  const wrapper = mount(markdownComponent, {
-    global: {
-      plugins: [markdown]
-    }
-  })
-  expect(wrapper.html()).toContain(`<h1>Hello World</h1>`)
-})
+test('render markdown', () => basicTest(template, markdown, expected))
