@@ -59,4 +59,19 @@ describe("markdown tests", () => {
     const expected = `<img alt="image" src="https://github.com">`;
     basicTest(template, markdown, expected);
   });
+  test("table", () => {
+    const markdown = `| a | b | c |\n| - | - | - |\n| 1 | 2 | 3 |`;
+    const expected = `<table>\n<thead>\n<tr>\n<th>a</th>\n<th>b</th>\n<th>c</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n</tr>\n</tbody></table>`;
+    basicTest(template, markdown, expected);
+  });
+  test("strikethrough", () => {
+    const markdown = `~~strikethrough~~`;
+    const expected = `<p><del>strikethrough</del></p>`;
+    basicTest(template, markdown, expected);
+  });
+  test("task lists", () => {
+    const markdown = `- [x] task 1\n- [ ] task 2`;
+    const expected = `<ul>\n<li><input type="checkbox" disabled="" checked=""> task 1</li>\n<li><input type="checkbox" disabled=""> task 2</li>\n</ul>`;
+    basicTest(template, markdown, expected);
+  });
 });
