@@ -2,17 +2,17 @@ name: Security audit
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 */3 * *'
+    - cron: "0 0 */3 * *"
   push:
     paths:
-      - '**/pnpm-lock.yaml'
-      - '**/package.json'
+      - "**/pnpm-lock.yaml"
+      - "**/package.json"
 jobs:
   security_audit:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16, 18, 20]
+        node-version: [18, 20]
         pnpm-version: [8]
     steps:
       - uses: actions/checkout@v3
@@ -24,8 +24,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
-          cache-dependency-path: '.'
+          cache: "pnpm"
+          cache-dependency-path: "."
       - name: Install dependencies
         run: pnpm install
       - name: Scan for vulnerabilities
