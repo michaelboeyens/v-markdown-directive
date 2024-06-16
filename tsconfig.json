@@ -1,19 +1,14 @@
 {
   "files": [],
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "v-markdown-directive.ts"],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "allowSyntheticDefaultImports": true
-  },
   "references": [
     {
       "path": "./tsconfig.node.json"
     },
     {
       "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.vitest.json"
     }
   ]
 }
