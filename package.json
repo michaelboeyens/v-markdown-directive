@@ -46,7 +46,7 @@
   "dependencies": {
     "@types/dompurify": "^3.0.5",
     "@types/marked": "^5.0.1",
-    "dompurify": "^3.0.6",
+    "dompurify": "^3.1.5",
     "marked": "^5.1.1",
     "vue": "^3.4.21"
   },
