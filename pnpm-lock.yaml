@@ -46,8 +46,8 @@ importers:
         specifier: ^0.34.6
         version: 0.34.6(vitest@0.34.6)
       '@vue/eslint-config-prettier':
-        specifier: ^8.0.0
-        version: 8.0.0(eslint@8.55.0)(prettier@3.1.1)
+        specifier: ^9.0.0
+        version: 9.0.0(eslint@8.55.0)(prettier@3.1.1)
       '@vue/eslint-config-typescript':
         specifier: ^12.0.0
         version: 12.0.0(eslint-plugin-vue@9.19.2(eslint@8.55.0))(eslint@8.55.0)(typescript@5.3.3)
@@ -482,8 +482,8 @@ packages:
   '@vue/compiler-ssr@3.4.31':
     resolution: {integrity: sha512-RtefmITAje3fJ8FSg1gwgDhdKhZVntIVbwupdyZDSifZTRMiWxWehAOTCc8/KZDnBOcYQ4/9VWxsTbd3wT0hAA==}
 
-  '@vue/eslint-config-prettier@8.0.0':
-    resolution: {integrity: sha512-55dPqtC4PM/yBjhAr+yEw6+7KzzdkBuLmnhBrDfp4I48+wy+Giqqj9yUr5T2uD/BkBROjjmqnLZmXRdOx/VtQg==}
+  '@vue/eslint-config-prettier@9.0.0':
+    resolution: {integrity: sha512-z1ZIAAUS9pKzo/ANEfd2sO+v2IUalz7cM/cTLOZ7vRFOPk5/xuRKQteOu1DErFLAh/lYGXMVZ0IfYKlyInuDVg==}
     peerDependencies:
       eslint: '>= 8.0.0'
       prettier: '>= 3.0.0'
@@ -802,8 +802,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-config-prettier@8.9.0:
-    resolution: {integrity: sha512-+sbni7NfVXnOpnRadUA8S28AUlsZt9GjgFvABIRL9Hkn8KqNzOp+7Lw4QWtrwn20KzU3wqu1QoOj2m+7rKRqkA==}
+  eslint-config-prettier@9.1.0:
+    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -2414,11 +2414,11 @@ snapshots:
       '@vue/compiler-dom': 3.4.31
       '@vue/shared': 3.4.31
 
-  '@vue/eslint-config-prettier@8.0.0(eslint@8.55.0)(prettier@3.1.1)':
+  '@vue/eslint-config-prettier@9.0.0(eslint@8.55.0)(prettier@3.1.1)':
     dependencies:
       eslint: 8.55.0
-      eslint-config-prettier: 8.9.0(eslint@8.55.0)
-      eslint-plugin-prettier: 5.0.0(eslint-config-prettier@8.9.0(eslint@8.55.0))(eslint@8.55.0)(prettier@3.1.1)
+      eslint-config-prettier: 9.1.0(eslint@8.55.0)
+      eslint-plugin-prettier: 5.0.0(eslint-config-prettier@9.1.0(eslint@8.55.0))(eslint@8.55.0)(prettier@3.1.1)
       prettier: 3.1.1
     transitivePeerDependencies:
       - '@types/eslint'
@@ -2801,18 +2801,18 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-prettier@8.9.0(eslint@8.55.0):
+  eslint-config-prettier@9.1.0(eslint@8.55.0):
     dependencies:
       eslint: 8.55.0
 
-  eslint-plugin-prettier@5.0.0(eslint-config-prettier@8.9.0(eslint@8.55.0))(eslint@8.55.0)(prettier@3.1.1):
+  eslint-plugin-prettier@5.0.0(eslint-config-prettier@9.1.0(eslint@8.55.0))(eslint@8.55.0)(prettier@3.1.1):
     dependencies:
       eslint: 8.55.0
       prettier: 3.1.1
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.5
     optionalDependencies:
-      eslint-config-prettier: 8.9.0(eslint@8.55.0)
+      eslint-config-prettier: 9.1.0(eslint@8.55.0)
 
   eslint-plugin-vue@9.19.2(eslint@8.55.0):
     dependencies:
