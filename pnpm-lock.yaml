@@ -21,8 +21,8 @@ importers:
         specifier: ^3.0.6
         version: 3.1.6
       marked:
-        specifier: ^5.1.1
-        version: 5.1.1
+        specifier: ^13.0.3
+        version: 13.0.3
       vue:
         specifier: ^3.3.11
         version: 3.4.31(typescript@5.3.3)
@@ -1273,8 +1273,8 @@ packages:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
     engines: {node: '>=10'}
 
-  marked@5.1.1:
-    resolution: {integrity: sha512-bTmmGdEINWmOMDjnPWDxGPQ4qkDLeYorpYbEtFOXzOruTwUE671q4Guiuchn4N8h/v6NGd7916kXsm3Iz4iUSg==}
+  marked@13.0.3:
+    resolution: {integrity: sha512-rqRix3/TWzE9rIoFGIn8JmsVfhiuC8VIQ8IdX5TfzmeBucdY05/0UlzKaw0eVtpcN/OdVFpBk7CjKGo9iHJ/zA==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -3329,7 +3329,7 @@ snapshots:
     dependencies:
       semver: 7.5.4
 
-  marked@5.1.1: {}
+  marked@13.0.3: {}
 
   memorystream@0.3.1: {}
 
