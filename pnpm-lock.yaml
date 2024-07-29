@@ -29,7 +29,7 @@ importers:
     devDependencies:
       '@rushstack/eslint-patch':
         specifier: ^1.6.0
-        version: 1.6.0
+        version: 1.10.4
       '@tsconfig/node18':
         specifier: ^18.2.2
         version: 18.2.2
@@ -326,8 +326,8 @@ packages:
   '@polka/url@1.0.0-next.23':
     resolution: {integrity: sha512-C16M+IYz0rgRhWZdCmK+h58JMv8vijAA61gmz2rspCSwKwzBebpdcsiUmwrtJRdphuY30i6BSLEOP8ppbNLyLg==}
 
-  '@rushstack/eslint-patch@1.6.0':
-    resolution: {integrity: sha512-2/U3GXA6YiPYQDLGwtGlnNgKYBSwCFIHf8Y9LUY5VATHdtbLlU0Y1R3QoBnT0aB4qv/BEiVVsj7LJXoQCgJ2vA==}
+  '@rushstack/eslint-patch@1.10.4':
+    resolution: {integrity: sha512-WJgX9nzTqknM393q1QJDJmoW28kUfEnybeTfVNcNAPnIx210RXm2DiXiHzfNPJNIUUb1tJnz/l4QGtJ30PgWmA==}
 
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
@@ -2177,7 +2177,7 @@ snapshots:
 
   '@polka/url@1.0.0-next.23': {}
 
-  '@rushstack/eslint-patch@1.6.0': {}
+  '@rushstack/eslint-patch@1.10.4': {}
 
   '@sinclair/typebox@0.27.8': {}
 
